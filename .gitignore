@@ -1,0 +1,10 @@
+
+target/
+dbt_packages/
+logs/
+../dbt-env/
+../logs/
+data_modelling/google-cloud-sdk/data/cli/gcloud.json
+data_modelling/google-cloud-sdk/bin/anthoscli
+data_modelling/google-cloud-cli-440.0.0-linux-x86_64.tar.gz
+../DataModelling-with-BigQury-and-dbt/
