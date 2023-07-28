@@ -1,2 +1,2 @@
-# DataModelling-with-BigQury-and-dbt
+# DataModelling-with-BigQuery-and-dbt
 
