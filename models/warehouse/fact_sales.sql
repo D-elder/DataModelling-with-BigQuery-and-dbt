@@ -1,10 +1,4 @@
-{{ config(
-    partition_by={
-      "field": "order_date",
-      "data_type": "date"
-    }
-)}}
-with source as(
+with source as (
     select
         od.order_id,
         od.product_id,
@@ -27,6 +21,7 @@ with source as(
     on od.order_id = o.id
     where od.order_id is not null
 ),
+
 unique_source as (
     select *,
             row_number() over(partition by customer_id, employee_id, order_id, product_id, shipper_id, purchase_order_id, shipper_id, order_date) as row_number
